@@ -2,7 +2,7 @@
 {
     public class Cookies : FlourProduct
     {
-        public Cookies(string name, Weight weight, Price price, NutritionalValue nutritionalvalue, Manufacturer manufacturer, double sugarAmount, Flour flour, Dough dough, FlavorAdditive flavorAdditive)
+        public Cookies(string name, Weight weight, Price price, NutritionalValue nutritionalvalue, Manufacturer manufacturer, double sugarAmount, Flour flour, Dough dough)
         {
             Name = name;
             Weight = new Weight(weight.Value, weight.Measure);

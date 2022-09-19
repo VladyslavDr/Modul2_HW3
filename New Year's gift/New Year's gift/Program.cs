@@ -51,8 +51,10 @@ namespace New_Year_s_gift
                 flour: Flour.Wheat,
                 dough: Dough.Shortbread,
                 form: TypeOfForm.Rectangle,
-                filling: Filling.CondensedMilk);
-            Console.WriteLine("fdsa");
+                filling: Filling.CondensedMilk,
+                spice: Spice.Cardamom);
+
+            Console.WriteLine(carvedGingerbread.GetCaloricValue());
         }
     }
 }

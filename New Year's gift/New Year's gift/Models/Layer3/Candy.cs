@@ -1,8 +1,8 @@
 ﻿namespace New_Year_s_gift
 {
-    public class Gingerbread : FlourProduct
+    public class Candy : SugarProduct
     {
-        public Gingerbread(string name, Weight weight, Price price, NutritionalValue nutritionalvalue, Manufacturer manufacturer, double sugarAmount, Flour flour, Dough dough, Spice spice)
+        public Candy(string name, Weight weight, Price price, NutritionalValue nutritionalvalue, Manufacturer manufacturer, double sugarAmount, TypeOfForm form, Filling filling, CandyWrapper candyWrapper)
         {
             Name = name;
             Weight = new Weight(weight.Value, weight.Measure);
@@ -16,12 +16,12 @@
                 importer: manufacturer.Importer,
                 country: manufacturer.Country);
             SugarAmount = sugarAmount;
-            Flour = flour;
-            Dough = dough;
-            Spice = spice;
+            Form = form;
+            Filling = filling;
+            CandyWrapper = new CandyWrapper(candyWrapper.Material, candyWrapper.Color);
         }
 
-        public Dough Dough { get; init; }
-        public Spice Spice { get; init; }
+        public Filling Filling { get; init; }
+        public CandyWrapper CandyWrapper { get; set; }
     }
 }

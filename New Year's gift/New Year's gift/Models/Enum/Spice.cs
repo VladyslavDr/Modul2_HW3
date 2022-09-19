@@ -1,0 +1,29 @@
+﻿namespace New_Year_s_gift
+{
+    public enum Spice
+    {
+        Basil,
+        Veg,
+        Mustard,
+        Ginger,
+        Camis,
+        Cardamom,
+        Curry,
+        Coriander,
+        Cinnamon,
+        Cumin,
+        Turmeric,
+        Nutmeg,
+        Oregano,
+        Paprika,
+        Pepper,
+        Rosemary,
+        Salt,
+        Sumac,
+        Suneli,
+        Thyme,
+        Dill,
+        Vinegar,
+        Saffron,
+    }
+}
