@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Text;
 
 namespace New_Year_s_gift
 {
@@ -63,8 +64,19 @@ namespace New_Year_s_gift
         {
         }
 
-        public void ShowItem()
+        public void ShowItem(string name)
         {
+            _sweetnesses.NameSearch(name);
+        }
+
+        public void ShowItem(Weight weight)
+        {
+            _sweetnesses.WidthSearh(weight);
+        }
+
+        public void ShowItem(Price price)
+        {
+            _sweetnesses.PriceSearh(price);
         }
 
         public void ShowGift()
