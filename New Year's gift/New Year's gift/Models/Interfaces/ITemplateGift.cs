@@ -7,6 +7,6 @@
         public void RemoveItem(Sweetness sweetness);
         void ShowGift();
         void ShowItem(string name);
-        void Sort();
+        void SortByPrice();
     }
 }

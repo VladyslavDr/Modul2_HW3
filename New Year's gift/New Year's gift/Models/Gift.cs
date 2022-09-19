@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Text;
 
 namespace New_Year_s_gift
 {
@@ -60,8 +59,9 @@ namespace New_Year_s_gift
             }
         }
 
-        public void Sort()
+        public void SortByPrice()
         {
+            Array.Sort(_sweetnesses);
         }
 
         public void ShowItem(string name)
@@ -81,14 +81,22 @@ namespace New_Year_s_gift
 
         public void ShowGift()
         {
-            if (_counter is 0)
+            int counter = 1;
+
+            if (_counter == 0)
             {
                 Console.WriteLine("The gift is empty!");
             }
 
             for (int index = 0; index < _counter; index++)
             {
-                Console.WriteLine($"{index + 1})\tname: {_sweetnesses[index].Name} ");
+                if (_sweetnesses[index] == null)
+                {
+                    _counter++;
+                    continue;
+                }
+
+                Console.WriteLine($"{counter++})\tname: {_sweetnesses[index].Name} ");
                 Console.Write($"\tweight: {_sweetnesses[index].Weight.Value}");
                 Console.WriteLine($"{_sweetnesses[index].Weight.Measure}");
                 Console.Write($"\tcost: {_sweetnesses[index].Price.Value}");
