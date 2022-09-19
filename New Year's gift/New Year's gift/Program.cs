@@ -54,6 +54,51 @@ namespace New_Year_s_gift
                 filling: Filling.CondensedMilk,
                 spice: Spice.Cardamom);
 
+            var lollipop = new Lollipop(
+                name: "Барбариска",
+                weight: new Weight(value: 100, measure: Measure.Gr),
+                price: new Price(value: 54.99M, Currency.UAH),
+                nutritionalvalue: new NutritionalValue(proteins: 0.5, fats: 1.001, carbs: 96.005),
+                manufacturer: new Manufacturer(companyName: "ROSHEN", importer: "ROSHEN", country: Country.Ukraine),
+                sugarAmount: 7.2,
+                form: TypeOfForm.Oval,
+                flavorAdditive: FlavorAdditive.Barabaris,
+                color: ConsoleColor.Red,
+                candyWrapper: new CandyWrapper(material: Material.Plastic, color: ConsoleColor.White));
+
+            var glazedCaramel = new GlazedCaramel(
+                name: "Рачёк",
+                weight: new Weight(value: 100, measure: Measure.Gr),
+                price: new Price(value: 35.99M, Currency.UAH),
+                nutritionalvalue: new NutritionalValue(proteins: 0.5, fats: 1.5, carbs: 105.805),
+                manufacturer: new Manufacturer(companyName: "ROSHEN", importer: "ROSHEN", country: Country.Ukraine),
+                sugarAmount: 10.5,
+                form: TypeOfForm.Oval,
+                flavorAdditive: FlavorAdditive.Milk,
+                color: ConsoleColor.White,
+                candyWrapper: new CandyWrapper(material: Material.Plastic, color: ConsoleColor.White),
+                glaze: Glaze.Dairy);
+
+            var marzipan = new Marzipan(
+                name: "Marzipan",
+                weight: new Weight(value: 100, measure: Measure.Gr),
+                price: new Price(value: 35.99M, Currency.UAH),
+                nutritionalvalue: new NutritionalValue(proteins: 9.2, fats: 35.8, carbs: 43.5),
+                manufacturer: new Manufacturer(companyName: "Zentis", importer: "Товары с Европы", country: Country.Germany),
+                sugarAmount: 40.8,
+                form: TypeOfForm.Cylinder,
+                candyWrapper: new CandyWrapper(material: Material.Foil, color: ConsoleColor.Yellow),
+                glaze: Glaze.Chocolate,
+                filling: Filling.Almond);
+
+            var raisins = new DriedFruit(
+                name: "У Ашота на 1КМ",
+                weight: new Weight(value: 100, measure: Measure.Gr),
+                price: new Price(value: 130.99M, Currency.UAH),
+                nutritionalValue: new NutritionalValue(proteins: 3.5, fats: 0.0, carbs: 79.0),
+                manufacturer: new Manufacturer(companyName: "Zentis", importer: "Товары с Европы", country: Country.Germany),
+                fruit: Fruit.Grapes);
+
             Console.WriteLine(carvedGingerbread.GetCaloricValue());
         }
     }
