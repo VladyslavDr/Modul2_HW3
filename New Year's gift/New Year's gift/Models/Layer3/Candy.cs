@@ -2,7 +2,7 @@
 {
     public class Candy : SugarProduct
     {
-        public Candy(string name, Weight weight, Price price, NutritionalValue nutritionalvalue, Manufacturer manufacturer, double sugarAmount, TypeOfForm form, Filling filling, CandyWrapper candyWrapper)
+        public Candy(string name, Weight weight, Price price, NutritionalValue nutritionalvalue, Manufacturer manufacturer, double sugarAmount, TypeOfForm form, CandyWrapper candyWrapper)
         {
             Name = name;
             Weight = new Weight(weight.Value, weight.Measure);
@@ -17,11 +17,9 @@
                 country: manufacturer.Country);
             SugarAmount = sugarAmount;
             Form = form;
-            Filling = filling;
             CandyWrapper = new CandyWrapper(candyWrapper.Material, candyWrapper.Color);
         }
 
-        public Filling Filling { get; init; }
         public CandyWrapper CandyWrapper { get; set; }
     }
 }

@@ -12,6 +12,7 @@
         Fish,
         Bear,
         Warm,
-        Rectangle
+        Rectangle,
+        Oval
     }
 }

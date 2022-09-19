@@ -5,6 +5,7 @@
         CherryJam,
         PearJam,
         Hazelnut,
-        CondensedMilk
+        CondensedMilk,
+        Almond
     }
 }
