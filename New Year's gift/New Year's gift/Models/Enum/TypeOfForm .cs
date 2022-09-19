@@ -10,6 +10,7 @@
         Cone,
         Shell,
         Fish,
-        Bear
+        Bear,
+        Warm
     }
 }
