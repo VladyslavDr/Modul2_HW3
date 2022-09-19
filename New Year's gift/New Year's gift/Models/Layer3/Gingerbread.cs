@@ -1,10 +1,8 @@
-﻿using System;
-
-namespace New_Year_s_gift
+﻿namespace New_Year_s_gift
 {
-    public class Marmalade : SugarProduct
+    public class Gingerbread : FlourProduct
     {
-        public Marmalade(string name, Weight weight, Price price, NutritionalValue nutritionalvalue, Manufacturer manufacturer, double sugarAmount, Thickener thickener, TypeOfForm form, ConsoleColor color)
+        public Gingerbread(string name, Weight weight, Price price, NutritionalValue nutritionalvalue, Manufacturer manufacturer, double sugarAmount, Flour flour, Dough dough)
         {
             Name = name;
             Weight = new Weight(weight.Value, weight.Measure);
@@ -18,12 +16,10 @@ namespace New_Year_s_gift
                 importer: manufacturer.Importer,
                 country: manufacturer.Country);
             SugarAmount = sugarAmount;
-            Thickener = thickener;
-            Form = form;
-            Color = color;
+            Flour = flour;
+            Dough = dough;
         }
 
-        public Thickener Thickener { get; init; }
-        public ConsoleColor Color { get; init; }
+        public Dough Dough { get; init; }
     }
 }

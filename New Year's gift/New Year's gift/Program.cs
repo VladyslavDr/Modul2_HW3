@@ -41,7 +41,18 @@ namespace New_Year_s_gift
                 color: ConsoleColor.Green,
                 fruit: Fruit.Banana);
 
-            Console.WriteLine(jellyMarmalade.GetCaloricValue());
+            var carvedGingerbread = new CarvedGingerbread(
+                name: "ТУЛЬСКИЙ",
+                weight: new Weight(value: 140, measure: Measure.Gr),
+                price: new Price(value: 5.99M, currency: Currency.UAH),
+                nutritionalvalue: new NutritionalValue(fats: 5.515, proteins: 6.15, carbs: 69.18),
+                manufacturer: new Manufacturer(companyName: "ОАО «Тульская кондитерская фабрика «Ясная Поляна»", importer: "fff", country: Country.Russia_Terrorist_Country),
+                sugarAmount: 5.0,
+                flour: Flour.Wheat,
+                dough: Dough.Shortbread,
+                form: TypeOfForm.Rectangle,
+                filling: Filling.CondensedMilk);
+            Console.WriteLine("fdsa");
         }
     }
 }

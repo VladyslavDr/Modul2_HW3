@@ -11,6 +11,7 @@
         Shell,
         Fish,
         Bear,
-        Warm
+        Warm,
+        Rectangle
     }
 }
